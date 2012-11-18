@@ -878,8 +878,6 @@ public interface RobotController {
      *             teleport range of
      *             <code>MapLocation toTeleporter</code>
      *             (GameActionExceptionType.CANT_SENSE_THAT)</li>
-     *             <li>An action has already been queued in this round
-     *             (GameActionExceptionType.DOUBLE_ACTION_ERROR)</li>
      */
     public void teleport(Robot r, MapLocation toTeleporter, MapLocation teleportLoc) throws GameActionException;
 

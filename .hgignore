@@ -2,3 +2,4 @@ syntax: glob
 .svn
 *.class
 *.class.*
+bin

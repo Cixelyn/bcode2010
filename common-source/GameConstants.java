@@ -45,7 +45,7 @@ public final class GameConstants {
     /** The number of rounds it takes to capture a flux deposit */
     public static final int ROUNDS_TO_CAPTURE = 100;
     /** The number of turns it takes to complete a teleport */
-    public static final int TELEPORT_DELAY = 40;
+    public static final int TELEPORT_DELAY = 20;
     /** The radius at which flux is mined */
     public static final int FLUX_RADIUS_SQUARED = 5;
     /** The maximum flux that can be stored in a tile */
@@ -53,7 +53,7 @@ public final class GameConstants {
     /** Turns until a turret is deployed */
     public static final int TURRET_DEPLOY_TIME = 10;
     /** public static final int TURRET_UNDEPLOY_TIME = 5; */
-    public static final double TURRET_DEPLOY_ATTACK_BONUS = .6;
+    public static final double TURRET_DEPLOY_ATTACK_BONUS = .75;
     /** Reduction to upkeep while deployed*/
     public static final double TURRET_DEPLOY_UPKEEP_REDUCTION = 0.;
     /** Delay of a deployed Turret's turn speed */
@@ -63,7 +63,7 @@ public final class GameConstants {
     /** The defensive aura building reduces damage by AURA_DEF_FACTOR */
     public static final double AURA_DEF_FACTOR = .2;
     /** The cost to teleport a unit */
-    public static final int TELEPORT_FLUX_COST = 50;
+    public static final int TELEPORT_FLUX_COST = 25;
     /** The max distance between buildings to contribute to the same hull */
     public static final int BUILDING_LINK_DIST = 5;
     /** The conversion multiplier from flux to energon */

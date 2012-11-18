@@ -82,7 +82,9 @@ public final class MapLocation implements Serializable {
 	 * @return the distance to the given location squared
 	 */
 	public final int distanceSquaredTo(MapLocation location) {
-		return (int)(pow(this.x - location.x, 2) + pow(this.y - location.y, 2));
+		int dx = this.x-location.x;
+		int dy = this.y-location.y;
+		return dx*dx+dy*dy;
 	}
 
 	/**
@@ -154,18 +156,7 @@ public final class MapLocation implements Serializable {
 	 */
     public final MapLocation add(Direction direction) {
 
-		switch (direction) {
-			case NORTH: return new MapLocation(x, y - 1);
-			case SOUTH: return new MapLocation(x, y + 1);
-			case WEST: return new MapLocation(x - 1, y);
-			case EAST: return new MapLocation(x + 1, y);
-			case NORTH_WEST: return new MapLocation(x - 1, y - 1);
-			case SOUTH_WEST: return new MapLocation(x - 1, y + 1);
-			case NORTH_EAST: return new MapLocation(x + 1, y - 1);
-			case SOUTH_EAST: return new MapLocation(x + 1, y + 1);
-			default:
-				return new MapLocation(x, y);
-		}
+		return new MapLocation(x+direction.dx,y+direction.dy);
     }
 
     /** 

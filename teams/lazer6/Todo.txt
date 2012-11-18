@@ -1,0 +1,14 @@
+Future Strategy stuff todo later if we have time
+
+While rushing and looking for enemy, scan map for possible build locations to go back to for hull
+
+
+
+Build Code that i Run as of now:
+RobotPlayer - all wouts are buildStrategy wouts to bypass transfering flux to archon
+			- if default, then we need some msg from archon to tell wouts to become build wouts 
+					(waste of time/we can't implement this well at the moment)
+ArchonDefaultStrategy - change ArchonBuilderStrategy to NewArchonBuilderStrategy - new trigger for build mode
+Wouts - have new condition to spawn tower if not near any other tower and have 5000 flux
+
+i played on plains against basic player and have uber hull

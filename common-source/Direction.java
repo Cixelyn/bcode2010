@@ -14,20 +14,27 @@ package battlecode.common;
  */
 public enum Direction {
 
-	NORTH,
-	NORTH_EAST,
-	EAST,
-	SOUTH_EAST,
-	SOUTH,
-	SOUTH_WEST,
-	WEST,
-	NORTH_WEST,
+	NORTH(0,-1),
+	NORTH_EAST(1,-1),
+	EAST(1,0),
+	SOUTH_EAST(1,1),
+	SOUTH(0,1),
+	SOUTH_WEST(-1,1),
+	WEST(-1,0),
+	NORTH_WEST(-1,-1),
 
 	/** No direction. */
-	NONE,
+	NONE(0,0),
 	
 	/** All directions. */
-	OMNI;
+	OMNI(0,0);
+
+	public final int dx, dy;
+
+	Direction(int dx,int dy) {
+		this.dx = dx;
+		this.dy = dy;
+	}
 
 	/**
 	 * Determines whether or not this direction is a diagonal one.
