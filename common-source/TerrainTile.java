@@ -14,8 +14,8 @@ public class TerrainTile implements Serializable {
 
     private static final long serialVersionUID = 785608353848029236L;
 
-	public static final int MIN_HEIGHT = 10;
-	public static final int MAX_HEIGHT = 20;
+	public static final int MIN_HEIGHT = 1;
+	public static final int MAX_HEIGHT = 31;
     /** The type of terrain in a tile **/
     public enum TerrainType {
 

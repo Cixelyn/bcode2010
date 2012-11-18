@@ -1,0 +1,42 @@
+
+===Stuff that needs to get done===
+  * Archons roughly computing the number of units they have spawned.
+    * Either via timeout or backdecay.
+  * Fix all State machine errors
+  * Small optimizations in broadcasting
+  * Chainer code
+  * Movement and Attack Micro
+  * Archon Memory between Jihad and nonJihad
+  * Archon General Strategy (Battle Micro, radioing stuff)
+  
+  
+  
+  
+  
+  Wout Code
+  * Head to flux maximum
+  * Wout battle strategy
+  
+  
+  
+  Integration of all pieces
+  
+  
+  
+  
+  Cory Notes
+  * Test and fix "TargetHit"
+  * Movement Data Overflow (36)
+  * Bytecode Usage optimizations
+  
+  
+ 
+ 
+==General notes=== 
+  *To build the project
+    * "ant -Dteam=team001 -Dfile.encoding=UTF-8 jar"
+  
+  
+Higher Strategy to think about:
+ * determine whether there is lots of open space for large hulls or whether
+ there are lots of obstructions (to determine tower building restrictions)

@@ -53,9 +53,9 @@ public final class GameConstants {
     /** Turns until a turret is deployed */
     public static final int TURRET_DEPLOY_TIME = 10;
     /** public static final int TURRET_UNDEPLOY_TIME = 5; */
-    public static final double TURRET_DEPLOY_ATTACK_BONUS = 1.2;
+    public static final double TURRET_DEPLOY_ATTACK_BONUS = .6;
     /** Reduction to upkeep while deployed*/
-    public static final double TURRET_DEPLOY_UPKEEP_REDUCTION = 0.05;
+    public static final double TURRET_DEPLOY_UPKEEP_REDUCTION = 0.;
     /** Delay of a deployed Turret's turn speed */
     public static final int TURRET_TURN_SPEED_DELAY = 10;
     /** The offensive aura building increases damage by AURA_OFF_FACTOR */

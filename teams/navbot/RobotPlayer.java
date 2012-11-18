@@ -13,9 +13,12 @@ public class RobotPlayer implements Runnable {
 	public void run() {
 		while (true) {
 			try{
-				if (!(this.myRC.isMovementActive() || this.myRC.isAttackActive() || this.myRC.hasActionSet())){
-					myNavi.bugInDirection(myRC.getLocation().directionTo(myRC.senseAlliedArchons()[0]));
-				} else myRC.yield();
+				if (myRC.getRobotType()==RobotType.WOUT) {
+					if (!(this.myRC.isMovementActive() || this.myRC.isAttackActive() || this.myRC.hasActionSet())){
+					myNavi.bugTo(myRC.getLocation().directionTo(myRC.senseAlliedArchons()[0]));
+					} else myRC.yield();
+				}
+				
 
 			} catch(GameActionException e) {
 				e.printStackTrace();
